@@ -90,6 +90,12 @@ ul {
 } */
 
 .header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: var(--white-txt-cl);
+
     border-bottom: 1px solid var(--line-cl)
 }
 
@@ -221,6 +227,9 @@ ul {
     color: var(--acceny-txt-cl);
 }
 
+.header-link-current::after {
+    position: absolute;
+}
 
 /* Hero section */
 
