@@ -29,6 +29,10 @@ body {
     color: var(--main-txt-cl)
 }
 
+.no-scroll {
+    overflow: hidden;
+}
+
 /* reset styles */
 h1,
 h2,
@@ -61,8 +65,7 @@ ul {
     margin-left: auto;
     margin-right: auto;
 
-    outline: 2px solid #7000FF;
-    outline-offset: -2px;
+
 }
 
 
@@ -79,18 +82,19 @@ ul {
     letter-spacing: 0.06em;
     color: var(--white-txt-cl);
     cursor: pointer;
+
+    transition-property: color, background-color, shadow;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-delay: 0s;
 }
 
 
 /* Header section */
 
-/* .header {
-    padding-top: 32px;
-    padding-bottom: 32px;
-} */
+
 
 .header {
-    position: fixed;
     top: 0;
     left: 0;
     width: 100%;
@@ -99,6 +103,8 @@ ul {
 }
 
 .header.no-transparency {
+    /* background-color: rgba(25, 28, 38, 0.5);
+    backdrop-filter: blur(4px); */
     /* background-color: var(--white-txt-cl); */
 }
 
@@ -128,6 +134,8 @@ ul {
 
 .header-logo-cl {
     color: var(--txt-logo-cl);
+
+
 }
 
 .logo,
@@ -138,6 +146,11 @@ ul {
     line-height: calc(31 / 26);
     letter-spacing: 0.03em;
     color: var(--acceny-txt-cl);
+
+    transition-property: background-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-delay: 0s;
 }
 
 .header-nav,
@@ -160,6 +173,11 @@ ul {
     line-height: calc(16 / 12);
     letter-spacing: 0.02em;
     color: var(--main-txt-cl);
+
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-delay: 0s;
 }
 
 .header-phone,
@@ -218,13 +236,22 @@ ul {
 
 
 
+.header-cont-item {
+    display: flex;
+    align-items: center;
+    outline: 2px solid #7000FF;
+    outline-offset: -1px;
+
+}
+
+
 .header-link:hover,
 .header-link:focus,
 .header-phone:hover,
 .header-phone:focus,
 .header-mail:hover,
-.header-mail:focus {
-    color: var(--acceny-txt-cl);
+.header-cont-item:hover .header-cont-item:focus {
+    color: #2196F3;
 }
 
 
@@ -271,14 +298,16 @@ ul {
 .hero-container {
     left: 0px;
     top: 80px;
-
-
-
 }
 
 .hero,
 .footer {
     background-color: var(--dark-bg-cl);
+
+    transition-property: background-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-delay: 0s;
 }
 
 
@@ -310,6 +339,10 @@ ul {
     display: block;
     margin: 0 auto;
 
+    transition-property: color, background-color, shadow;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-delay: 0s;
 }
 
 .hero-btn:hover,
@@ -351,11 +384,7 @@ ul {
 }
 
 
-
 /* Конец Отличий */
-
-
-
 
 
 
@@ -399,8 +428,10 @@ ul {
     color: #AFB1B8;
     background-color: E5E5E5;
 
-
-
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-delay: 0s;
 }
 
 .clients-link:hover,
@@ -632,6 +663,11 @@ ul {
     padding-bottom: 60px;
 }
 
+.footer-section {
+    display: flex;
+}
+
+
 .footer-logo {
     padding-top: 60px;
 
@@ -668,19 +704,30 @@ ul {
     display: flex;
     align-items: center;
     justify-content: center;
-
-
 }
 
+
+
+
+
 .join {
-    color: #ffffff;
+
+    margin-left: 70px;
+
 
 }
 
 .join-txt {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: calc(16 / 14);
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--white-txt-cl);
+
+    text-transform: uppercase;
 }
 
 .footer-socials {
@@ -696,8 +743,8 @@ ul {
 
 }
 
-.footer-socials-icon {
-    fill: #FFFFFF;
+.footer-icon {
+    margin-top: 20px;
 }
 
 .footer-socials-link {
@@ -711,6 +758,11 @@ ul {
     ;
     border-radius: 50%;
 
+    transition-property: color, background-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-delay: 0s;
+
 }
 
 .socials-twitter {
@@ -723,18 +775,10 @@ ul {
     background-color: #2196F3;
 }
 
+
 .footer-socials-icon {
     fill: currentColor;
 }
-
-
-
-
-
-
-
-
-
 
 
 /* .footer-social-subtitle {
@@ -776,6 +820,11 @@ Socials icons
     background-color: #FFFFFF;
     border-radius: 50%;
     outline: 2px solid #FFFFFF;
+
+    transition-property: color, background-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-delay: 0s;
 
 }
 
@@ -827,17 +876,21 @@ Socials icons
 
     background: var(--ligh-bg-cl);
     border-radius: 4px;
+
+    transition-property: color, box-shadow;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-delay: 0s;
 }
 
 .filter-btn:hover,
 .filter-btn:focus {
-    color: var(--main-txt-cl);
-}
-
-.filter-btn-current {
     background-color: var(--acceny-txt-cl);
     color: var(--white-txt-cl);
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
+
+
 
 .filter-btn {
     cursor: pointer;
@@ -856,6 +909,7 @@ Socials icons
     flex-wrap: wrap;
     gap: 30px;
     margin-top: 50px;
+
 }
 
 
@@ -863,6 +917,64 @@ Socials icons
     width: 370px;
     background: var(--cards-cl);
     border: 1px solid var(--card-bg);
+
+
+    transition-property: box-shadow;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-delay: 0s;
+
+    position: relative;
+    overflow: hidden;
+}
+
+.examples-picture {
+    position: relative;
+    overflow: hidden;
+}
+
+.overlay {
+    position: absolute;
+
+    top: 0;
+    left: 0;
+
+
+    transform: translateY(100%);
+    overflow: hidden;
+
+    width: 370px;
+    height: 294px;
+
+    padding: 63px 24px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background-color: var(--acceny-txt-cl);
+
+    transition: transform 250ms ease-in-out;
+
+}
+
+
+.examples-img-link:hover .overlay {
+    transform: translateY(0);
+
+}
+
+.examples-item:hover {
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+
+.overlay-text {
+    font-size: 20px;
+    line-height: 1.5;
+    letter-spacing: 0.06em;
+    color: var(--white-txt-cl);
+    text-align: center;
 }
 
 .examples-box {
@@ -923,12 +1035,17 @@ Socials icons
     height: 100%;
 
     background-color: rgba(0, 0, 0, 0.12);
+
+    transition: opacity 600ms ease-out, visibility 600ms ease-out;
+
+
 }
 
 .backdrop.is-hidden {
     opacity: 0;
     visibility: hidden;
     pointer-events: none;
+
 }
 
 .modal {
@@ -937,6 +1054,7 @@ Socials icons
     height: 581px;
     background: #FFFFFF;
     border-radius: 4px;
+    transform: translate() scale(1) rotate(0);
 }
 
 .modal-btn {

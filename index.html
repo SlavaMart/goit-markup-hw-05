@@ -25,7 +25,7 @@
     <title>Студия</title>
   </head>
 
-  <body>
+  <body data-page>
     <header class="header" data-header>
       <div class="container header-container">
         <!--Шапка сайта-->
@@ -49,7 +49,67 @@
           </ul>
         </nav>
 
-        <ul class="header-cont-list list">
+        <ul>
+          <li></li>
+        </ul>
+
+        <!-- <ul class="header-cont-list list">
+          <li class="header-cont-item">
+            <a class="header-mail-link-main" href="">
+              <div class="header-mail-container">
+                <div class="mail-icon">
+                  <a
+                    class="link header-mail-link"
+                    href=""
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="mail"
+                  >
+                    <svg class="header-mail-icon" width="16" height="12">
+                      <use href="./images/icons..svg#mail"></use>
+                    </svg>
+
+                    <div class="mail-txt">
+                      <a
+                        class="header-mail link"
+                        href="mailto:info@devstudio.com"
+                        title="Отправить электронное письмо"
+                        >info@devstudio.com</a
+                      >
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </a>
+          </li>
+          <li class="header-cont-item">
+            <div class="header-phone-container">
+              <div class="header-phone-icon">
+                <a
+                  class="link header-phone-link"
+                  href=""
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="mail"
+                ></a>
+                <svg class="header-mail-icon" width="10" height="16">
+                  <use href="./images/icons..svg#phone"></use>
+                </svg>
+              </div>
+
+              <div class="header-phone-txt">
+                <a
+                  class="header-phone link"
+                  href="tel:++380961111111"
+                  title="Позвонить"
+                  >+38 096 111 11 11</a
+                >
+              </div>
+            </div>
+          </li>
+        </ul> -->
+
+        <!-- <ul class="header-cont-list list">
           <li class="header-cont-item">
             <div class="header-mail-container">
               <div class="mail-icon">
@@ -101,7 +161,7 @@
               </div>
             </div>
           </li>
-        </ul>
+        </ul> -->
       </div>
     </header>
 
@@ -633,8 +693,8 @@
     </section>
 
     <footer class="footer">
-      <div class="container footer-container">
-        <div class="container">
+      <div class="container footer-section">
+        <div>
           <a class="footer-logo link" href=""
             ><span>Web</span><span class="footer-logo-cl">Studio</span></a
           >
@@ -664,11 +724,9 @@
         </div>
 
         <div class="join">
-          <div class="join-txt">
-            <h3>Присоединяйтесь</h3>
-          </div>
+          <p class="join-txt">Присоединяйтесь</p>
 
-          <div class="footer-socials">
+          <div class="footer-icon">
             <ul class="socials list">
               <li class="socials-item">
                 <a
@@ -739,7 +797,7 @@
       </div>
     </div>
 
-    <script src="./js/header-scrol.js"></script>
+    <script src="./js/header-scroll.js"></script>
     <script src="./js/modal.js"></script>
   </body>
 </html>
