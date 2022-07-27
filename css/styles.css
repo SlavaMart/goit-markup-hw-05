@@ -201,7 +201,6 @@ ul {
     align-items: center;
     justify-content: center;
 
-
 }
 
 .header-mail-container {
@@ -239,8 +238,7 @@ ul {
 .header-cont-item {
     display: flex;
     align-items: center;
-    outline: 2px solid #7000FF;
-    outline-offset: -1px;
+
 
 }
 
@@ -250,9 +248,52 @@ ul {
 .header-phone:hover,
 .header-phone:focus,
 .header-mail:hover,
+.header-mail-container,
 .header-cont-item:hover .header-cont-item:focus {
     color: #2196F3;
 }
+
+.header-cont-list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+
+.contact {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    color: #757575;
+
+}
+
+.header-mail-icon {
+    margin-right: 10px;
+    fill: var(--contct-txt-cl);
+}
+
+
+.contact:hover,
+.contact:focus,
+.header-mail-icon:hover,
+.header-mail-icon:focus {
+    color: var(--acceny-txt-cl);
+}
+
+
+.header-mail-icon:hover,
+.header-mail-icon:focus {
+    fill: var(--acceny-txt-cl);
+}
+
+
+
+/* .header-svg:hover,
+.header-svg:focus {
+    fill: #2196F3;
+} */
 
 
 
