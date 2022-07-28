@@ -162,9 +162,7 @@ ul {
     letter-spacing: 0.02em;
 }
 
-.header-link,
-.header-phone,
-.header-mail {
+.header-link {
     display: inline-block;
     padding-top: 32px;
     padding-bottom: 32px;
@@ -180,7 +178,7 @@ ul {
     transition-delay: 0s;
 }
 
-.header-phone,
+/* .header-phone,
 .header-mail {
     color: #757575;
     padding-top: 32px;
@@ -194,35 +192,41 @@ ul {
 
 .header-mail:last-child {
     margin-right: 0px;
-}
+} */
 
-.header-mail-link {
+/* .header-mail-link {
     display: flex;
     align-items: center;
     justify-content: center;
 
-}
+} */
 
-.header-mail-container {
+/* .header-mail-container {
     display: flex;
-}
+} */
 
-.mail-icon {
+/* .mail-icon {
     display: flex;
     align-items: center;
     justify-content: center;
-}
+} */
 
-.mail-txt {
+/* .mail-txt {
     display: flex;
     margin-left: 10px;
-}
+} */
 
 .header-phone-icon {
     display: flex;
     align-items: center;
     justify-content: center;
 }
+
+
+
+/* .mail {
+    width: 1.3330078125em;
+} */
 
 .header-phone-txt {
     display: flex;
@@ -269,24 +273,37 @@ ul {
 
 }
 
+.icon {
+    display: inline-block;
+    width: 1em;
+    height: 1em;
+    stroke-width: 0;
+    stroke: currentColor;
+    fill: currentColor;
+}
+
+.mail {
+    width: 1.3330078125em;
+}
+
 .header-mail-icon {
     margin-right: 10px;
-    fill: var(--contct-txt-cl);
+    fill: currentColor;
 }
 
 
-.contact:hover,
+/* .contact:hover,
 .contact:focus,
 .header-mail-icon:hover,
 .header-mail-icon:focus {
     color: var(--acceny-txt-cl);
-}
+} */
 
 
-.header-mail-icon:hover,
+/* .header-mail-icon:hover,
 .header-mail-icon:focus {
     fill: var(--acceny-txt-cl);
-}
+} */
 
 
 
@@ -721,7 +738,12 @@ ul {
     letter-spacing: 0.03em;
     color: rgba(255, 255, 255, 0.6);
     margin-top: 20px;
+}
 
+
+.footer-mail {
+    margin-top: 9px;
+    margin-bottom: 9px;
 }
 
 .footer-link {
@@ -799,9 +821,7 @@ ul {
 
 }
 
-.socials-twitter {
-    background-color: #2196F3;
-}
+
 
 .footer-socials-link:hover,
 .footer-socials-link:focus {
@@ -921,7 +941,8 @@ Socials icons
 .filter-btn:focus {
     background-color: var(--acceny-txt-cl);
     color: var(--white-txt-cl);
-    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+    border-radius: 4px;
 }
 
 
@@ -999,7 +1020,7 @@ Socials icons
 }
 
 .examples-item:hover {
-    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 
