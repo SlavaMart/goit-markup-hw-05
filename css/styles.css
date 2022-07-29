@@ -506,7 +506,45 @@ ul {
 
 .about-list {
     display: flex;
+}
+
+.about-list,
+.about-item:not(:last-child) {
     gap: 30px;
+}
+
+.about-list,
+.about-item {
+    position: relative;
+}
+
+
+.about-list .about-overlay {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    position: absolute;
+    bottom: 0;
+
+
+    width: 370px;
+    min-height: 70px;
+
+    background: rgba(47, 48, 58, 0.8);
+}
+
+/* .about-overlay-text {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: calc(16 / 14);
+    letter-spacing: 0.03em;
+    color: #FFFFFF;
+} */
+
+.about-list {
+    display: flex;
+    /* gap: 30px; */
     margin-top: 50px;
 }
 
@@ -516,7 +554,30 @@ ul {
     display: block;
 }
 
+.about-overlay {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
+    width: 370px;
+    min-height: 70px;
+
+    position: absolute;
+
+
+    background: rgba(47, 48, 58, 0.8);
+
+}
+
+.about-overlay-text {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: calc(16 / 14);
+    letter-spacing: 0.03em;
+    color: #FFFFFF;
+}
 
 /* Team*/
 
